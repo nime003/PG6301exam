@@ -1,0 +1,74 @@
+{
+  "users": [
+    {
+      "username": "johnDoe",
+      "password": "hello",
+      "realName": "John Doe",
+      "occupancy": "Software Developer",
+      "isAdmin": true
+    },
+    {
+      "username": "janeSmith",
+      "password": "cocacola",
+      "realName": "Jane Smith",
+      "occupancy": "Project Manager",
+      "isAdmin": false
+    },
+    {
+      "username": "mikeRoe",
+      "password": "michaelbeastmode123",
+      "realName": "Mike Roe",
+      "occupancy": "UI/UX Designer",
+      "isAdmin": false
+    },
+    {
+      "username": "aliceBlue",
+      "password": "leagueoflegends",
+      "realName": "Alice Blue",
+      "occupancy": "HR Manager",
+      "isAdmin": true
+    },
+    {
+      "username": "bobBrown",
+      "password": "morbius",
+      "realName": "Bob Brown",
+      "occupancy": "Backend Developer",
+      "isAdmin": false
+    },
+    {
+      "username": "charlieGreen",
+      "password": "hashed_password_6",
+      "realName": "Charlie Green",
+      "occupancy": "Frontend Developer",
+      "isAdmin": true
+    },
+    {
+      "username": "daveRed",
+      "password": "redviper123",
+      "realName": "Dave Red",
+      "occupancy": "Database Administrator",
+      "isAdmin": true
+    },
+    {
+      "username": "ellaGrey",
+      "password": "ellabella",
+      "realName": "Ella Grey",
+      "occupancy": "Systems Engineer",
+      "isAdmin": false
+    },
+    {
+      "username": "frankBlack",
+      "password": "securepassword",
+      "realName": "Frank Black",
+      "occupancy": "QA Tester",
+      "isAdmin": true
+    },
+    {
+      "username": "graceWhite",
+      "password": "videogamer",
+      "realName": "Grace White",
+      "occupancy": "Network Engineer",
+      "isAdmin": false
+    }
+  ]
+}

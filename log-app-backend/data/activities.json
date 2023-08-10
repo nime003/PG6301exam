@@ -1,0 +1,44 @@
+{
+  "activities": [
+    {
+      "task": "Fix known bugs",
+      "occupancy": "Software Developer"
+    },
+    {
+      "task": "Schedule upcoming meetings",
+      "occupancy": "Project Manager"
+    },
+    {
+      "task": "Complete the UI of the website",
+      "occupancy": "UI/UX Designer"
+    },
+    {
+      "task": "Organize employee engagement events",
+      "occupancy": "HR Manager"
+    },
+    {
+      "task": "Optimize database queries",
+      "occupancy": "Backend Developer"
+    },
+    {
+      "task": "Implement responsive design",
+      "occupancy": "Frontend Developer"
+    },
+    {
+      "task": "Regular database backups",
+      "occupancy": "Database Administrator"
+    },
+    {
+      "task": "Ensure infrastructure scalability",
+      "occupancy": "Systems Engineer"
+    },
+    {
+      "task": "Test new features for bugs",
+      "occupancy": "QA Tester"
+    },
+    {
+      "task": "Maintain network uptime",
+      "occupancy": "Network Engineer"
+    }
+  ]
+}
