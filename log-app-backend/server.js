@@ -2,6 +2,13 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const fs = require('fs');
 const cors = require('cors');
+const path = require('path');
+
+const usersFilePath = path.join(__dirname, 'data', 'Users.json');
+const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8')).users;
+const activities = JSON.parse(fs.readFileSync(__dirname + '/data/activities.json', 'utf-8')).activities;
+const assignedActivities = JSON.parse(fs.readFileSync(__dirname + '/data/assignedActivities.json', 'utf-8')).assignedActivities;
+const loggedHours = JSON.parse(fs.readFileSync(__dirname + '/data/loggedHours.json', 'utf-8')).loggedHours || [];
 
 const app = express();
 const port = 4000;
@@ -9,7 +16,7 @@ const port = 4000;
 app.use(bodyParser.json());
 app.use(cors());
 
-const users = JSON.parse(fs.readFileSync('data/Users.json', 'utf-8')).users;
+//const users = JSON.parse(fs.readFileSync('data/Users.json', 'utf-8')).users;
 
 app.post('/login', (req, res) => {
     const { username, password } = req.body;
@@ -32,13 +39,13 @@ app.post('/login', (req, res) => {
     }
 });
 
-const activities = JSON.parse(fs.readFileSync('data/activities.json', 'utf-8')).activities;
+//const activities = JSON.parse(fs.readFileSync('data/activities.json', 'utf-8')).activities;
 
 app.get('/activities', (req, res) => {
     res.json(activities);
 });
 
-const assignedActivities = JSON.parse(fs.readFileSync('data/assignedActivities.json', 'utf-8')).assignedActivities;
+//const assignedActivities = JSON.parse(fs.readFileSync('data/assignedActivities.json', 'utf-8')).assignedActivities;
 
 app.get('/userAssignments/:username', (req, res) => {
     const userAssignments = assignedActivities.filter(a => a.username === req.params.username);
@@ -62,7 +69,7 @@ app.post('/assignActivity', (req, res) => {
     res.json({ success: true, message: 'Activity assigned successfully!' });
 });
 
-const loggedHours = JSON.parse(fs.readFileSync('data/loggedHours.json', 'utf-8')).loggedHours || [];
+//const loggedHours = JSON.parse(fs.readFileSync('data/loggedHours.json', 'utf-8')).loggedHours || [];
 
 app.post('/logHours', (req, res) => {
     const { username, task, hours } = req.body;
@@ -90,3 +97,5 @@ app.post('/logHours', (req, res) => {
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
+
+module.exports = app;

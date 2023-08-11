@@ -9,6 +9,11 @@ const LogHours = ({ user }) => {
     const [error, setError] = useState('');
 
     useEffect(() => {
+        if (!user || !user.username) {
+            setError("No user information available.");
+            return;
+        }
+
         const fetchUserAssignments = async () => {
             try {
                 const response = await axios.get(`http://localhost:4000/userAssignments/${user.username}`);
@@ -35,7 +40,7 @@ const LogHours = ({ user }) => {
             const response = await axios.post('http://localhost:4000/logHours', {
                 username: user.username,
                 task: selectedAssignment,
-                hours: parseFloat(hours)
+                hours: parseFloat(hours) // ensure hours are a number
             });
 
             if (response.data.success) {
