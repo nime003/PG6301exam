@@ -2,10 +2,11 @@
 Hello!
 MUST DO following in terminal:
 
-npm install concurrently
-npm install axios
-npm install express
-npm install cors
+npm install, 
+npm install concurrently, 
+npm install axios, 
+npm install express, 
+npm install cors, 
 
 or else you will get errors
 
@@ -24,3 +25,5 @@ i've accomplished only showing the default employee options to employees without
 I know i CANNOT change database from mongodb but what else was i supposed to do :/ i've run out of time
 
 (for some reason adding assignents and saving it to json file doesnt work anymore, same with logging hours)
+
+ps. i also added the whole project file as a zip in case it shouldnt work
