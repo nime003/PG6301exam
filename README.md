@@ -18,6 +18,9 @@ A known bug is that for some reason the server stops responing at random times, 
 Accounts that can be used are in the users.json file
 the one i used for debugging is johnDoe and password hello
 
+I've accomplished running an express server with react as frontend, i've accomplished reading data from a "database" and making a functional login page that serves the user with a personalised greeting message.
+i've accomplished only showing the default employee options to employees without "isadmin" status and all four options to employees with "isadmin" status however it changes nothing.
+
 I know i CANNOT change database from mongodb but what else was i supposed to do :/ i've run out of time
 
 (for some reason adding assignents and saving it to json file doesnt work anymore, same with logging hours)
